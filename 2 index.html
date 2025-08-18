@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkTree Bos</title>
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .profile img {
+      width: 120px;
+      border-radius: 50%;
+      margin: 10px;
+      border: 3px solid #00ff88;
+      box-shadow: 0 0 15px #00ff88;
+    }
+    h1 {
+      margin: 15px 0 5px;
+    }
+    p {
+      margin: 0 0 20px;
+      color: #aaa;
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 12px 0;
+      padding: 15px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .link i {
+      font-size: 18px;
+    }
+
+    /* Warna brand */
+    .instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); }
+    .tiktok { background: #010101; }
+    .whatsapp { background: #25d366; }
+    .broker { background: #0066ff; }
+
+    /* Hover efek neon glow */
+    .link:hover {
+      background: #00ff88 !important;
+      color: #111;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="https://raw.githubusercontent.com/Yudhaskha/linktree/main/IMG-20250818-WA0009.jpg" alt="Foto Profil 1">
+      <img src="https://raw.githubusercontent.com/Yudhaskha/linktree/main/IMG-20250818-WA0009.png" alt="Foto Profil 2">
+      <h1>@yudhaskha</h1>
+      <p>UnderratedFx</p>
+    </div>
+    <a href="https://www.instagram.com/yudhaskha?igsh=Mmd0ZXlkZWl1djlw&utm_source=qr" class="link instagram">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.tiktok.com/@yudhaskha?_t=ZS-8yy0ubbzcJE&_r=1" class="link tiktok">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+    <a href="https://whatsapp.com/channel/0029Vb61aK3CcW4q0QybIJ1t" class="link whatsapp">
+      <i class="fab fa-whatsapp"></i> Channel WA
+    </a>
+    <a href="https://one.exnesstrack.org/a/yedc4xxdma?source=app&platform=mobile&pid=mobile_share" class="link broker">
+      <i class="fas fa-chart-line"></i> Broker (Exness)
+    </a>
+  </div>
+</body>
+</html>
